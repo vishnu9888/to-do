@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vishnu's To-Do List</title>
+   
+    <!-- External CSS -->
+    <link rel="stylesheet" href="stylesheets.css">
+   
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="—Pngtree—check mark icon_3566317.png" type="image/png">
+   
+    <!-- Inline Styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .h1 {
+        font-size: 32px;  /* Increase the font size to your desired value */
+        font-family: "Poppins", sans-serif;  /* Change the font family to your desired font */
+        background-color: rgb(25, 203, 227);
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+}
+        #newtask {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #newtask input[type="text"] {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        #newtask button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #tasks {
+            list-style: none;
+            padding: 0;
+        }
+        #tasks li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        #tasks li input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        #tasks li button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+<center><h1 style="font-size: 32px; font-weight: bold; background-color: rgb(255, 255, 255); padding: 20px;">TO-DO LIST</h1></center>
+<br>
+
+    <div class="container">
+        <div id="newtask">
+            <input type="text" placeholder="Enter your task">
+            <button id="push">Add</button>
+        </div>
+
+        <ul id="tasks">
+            
+        </ul>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="java_sc.js"></script>
+</body>
+</html>
